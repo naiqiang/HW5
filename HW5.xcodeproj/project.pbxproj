@@ -13,6 +13,9 @@
 		D6B3D3601A8F1FB90069AA16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B3D35F1A8F1FB90069AA16 /* Images.xcassets */; };
 		D6B3D3631A8F1FB90069AA16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B3D3611A8F1FB90069AA16 /* Main.storyboard */; };
 		D6B3D36F1A8F1FB90069AA16 /* HW5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D36E1A8F1FB90069AA16 /* HW5Tests.m */; };
+		D6B3D37A1A8F24AC0069AA16 /* ArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D3791A8F24AC0069AA16 /* ArtView.m */; };
+		D6B3D37D1A8F25A00069AA16 /* RandomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D37C1A8F25A00069AA16 /* RandomView.m */; };
+		D6B3D3801A8F25B10069AA16 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D37F1A8F25B10069AA16 /* ShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		D6B3D3681A8F1FB90069AA16 /* HW5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B3D36D1A8F1FB90069AA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B3D36E1A8F1FB90069AA16 /* HW5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW5Tests.m; sourceTree = "<group>"; };
+		D6B3D3781A8F24AC0069AA16 /* ArtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtView.h; sourceTree = "<group>"; };
+		D6B3D3791A8F24AC0069AA16 /* ArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtView.m; sourceTree = "<group>"; };
+		D6B3D37B1A8F25A00069AA16 /* RandomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomView.h; sourceTree = "<group>"; };
+		D6B3D37C1A8F25A00069AA16 /* RandomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomView.m; sourceTree = "<group>"; };
+		D6B3D37E1A8F25B10069AA16 /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
+		D6B3D37F1A8F25B10069AA16 /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,12 @@
 				D6B3D35D1A8F1FB90069AA16 /* ViewController.m */,
 				D6B3D35F1A8F1FB90069AA16 /* Images.xcassets */,
 				D6B3D3611A8F1FB90069AA16 /* Main.storyboard */,
+				D6B3D37B1A8F25A00069AA16 /* RandomView.h */,
+				D6B3D37C1A8F25A00069AA16 /* RandomView.m */,
+				D6B3D37E1A8F25B10069AA16 /* ShapeView.h */,
+				D6B3D37F1A8F25B10069AA16 /* ShapeView.m */,
+				D6B3D3781A8F24AC0069AA16 /* ArtView.h */,
+				D6B3D3791A8F24AC0069AA16 /* ArtView.m */,
 				D6B3D3551A8F1FB90069AA16 /* Supporting Files */,
 			);
 			path = HW5;
@@ -217,6 +232,9 @@
 			files = (
 				D6B3D35E1A8F1FB90069AA16 /* ViewController.m in Sources */,
 				D6B3D35B1A8F1FB90069AA16 /* main.m in Sources */,
+				D6B3D37A1A8F24AC0069AA16 /* ArtView.m in Sources */,
+				D6B3D37D1A8F25A00069AA16 /* RandomView.m in Sources */,
+				D6B3D3801A8F25B10069AA16 /* ShapeView.m in Sources */,
 				D6B3D3591A8F1FB90069AA16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
