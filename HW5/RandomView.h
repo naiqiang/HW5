@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RandomPercentGenerator.h"
 
 @interface RandomView : NSView
+
+@property (nonatomic, strong) NSArray* randomNumberArray;
 
 @end

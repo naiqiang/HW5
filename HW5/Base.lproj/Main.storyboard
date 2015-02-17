@@ -667,7 +667,7 @@
         <!--Tab View Controller-->
         <scene sceneID="ASz-he-L12">
             <objects>
-                <tabViewController id="PWF-aY-aka" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="PWF-aY-aka" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="5Vk-BY-1ec"/>
                         <tabViewItem identifier="" id="2kT-Mu-YjF"/>
@@ -687,27 +687,47 @@
                 </tabViewController>
                 <customObject id="nnk-gh-QhT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="769"/>
+            <point key="canvasLocation" x="175" y="757"/>
         </scene>
-        <!--View Controller-->
+        <!--StockViewController-->
         <scene sceneID="1sa-dn-dZy">
             <objects>
-                <viewController id="jhC-BT-HrS" sceneMemberID="viewController">
+                <viewController title="StockViewController" id="jhC-BT-HrS" customClass="StockViewController" sceneMemberID="viewController">
                     <view key="view" id="c83-Fw-Pzp">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="DJb-kj-RiX" customClass="RandomView">
-                                <rect key="frame" x="20" y="20" width="410" height="260"/>
+                                <rect key="frame" x="20" y="51" width="410" height="229"/>
                             </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yzb-bx-jM1">
+                                <rect key="frame" x="14" y="3" width="82" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VIO-KC-aYS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onRefresh:" target="jhC-BT-HrS" id="SUr-de-O6J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DJb-kj-RiX" secondAttribute="trailing" constant="20" id="11O-Sx-UDY"/>
-                            <constraint firstAttribute="bottom" secondItem="DJb-kj-RiX" secondAttribute="bottom" constant="20" id="p2e-HC-lBj"/>
+                            <constraint firstItem="DJb-kj-RiX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c83-Fw-Pzp" secondAttribute="leading" constant="20" id="Rks-Bt-l4j"/>
+                            <constraint firstItem="yzb-bx-jM1" firstAttribute="top" secondItem="DJb-kj-RiX" secondAttribute="bottom" constant="20" symbolic="YES" id="e3b-I7-bWY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DJb-kj-RiX" secondAttribute="trailing" constant="20" id="f4h-K0-KIN"/>
+                            <constraint firstItem="DJb-kj-RiX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="c83-Fw-Pzp" secondAttribute="top" constant="20" id="mtM-PO-o1Q"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DJb-kj-RiX" secondAttribute="bottom" constant="40" id="njt-Ar-2UJ"/>
+                            <constraint firstItem="yzb-bx-jM1" firstAttribute="leading" secondItem="DJb-kj-RiX" secondAttribute="leading" id="qoT-Ic-odw"/>
                             <constraint firstItem="DJb-kj-RiX" firstAttribute="top" secondItem="c83-Fw-Pzp" secondAttribute="top" constant="20" id="r1K-WX-p78"/>
                             <constraint firstItem="DJb-kj-RiX" firstAttribute="leading" secondItem="c83-Fw-Pzp" secondAttribute="leading" constant="20" id="rYY-8g-Ouc"/>
+                            <constraint firstAttribute="bottom" secondItem="yzb-bx-jM1" secondAttribute="bottom" constant="10" id="ujW-On-AIa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="randomView" destination="DJb-kj-RiX" id="fAh-tp-h5p"/>
+                        <outlet property="refreshButton" destination="yzb-bx-jM1" id="Bbt-Qq-pjG"/>
+                    </connections>
                 </viewController>
                 <customObject id="ZHe-yR-2VQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

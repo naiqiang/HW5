@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		D6B3D3591A8F1FB90069AA16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D3581A8F1FB90069AA16 /* AppDelegate.m */; };
 		D6B3D35B1A8F1FB90069AA16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D35A1A8F1FB90069AA16 /* main.m */; };
-		D6B3D35E1A8F1FB90069AA16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D35D1A8F1FB90069AA16 /* ViewController.m */; };
 		D6B3D3601A8F1FB90069AA16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B3D35F1A8F1FB90069AA16 /* Images.xcassets */; };
 		D6B3D3631A8F1FB90069AA16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B3D3611A8F1FB90069AA16 /* Main.storyboard */; };
 		D6B3D36F1A8F1FB90069AA16 /* HW5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D36E1A8F1FB90069AA16 /* HW5Tests.m */; };
 		D6B3D37A1A8F24AC0069AA16 /* ArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D3791A8F24AC0069AA16 /* ArtView.m */; };
 		D6B3D37D1A8F25A00069AA16 /* RandomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D37C1A8F25A00069AA16 /* RandomView.m */; };
 		D6B3D3801A8F25B10069AA16 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D37F1A8F25B10069AA16 /* ShapeView.m */; };
+		E181485E1A93170E0093F61E /* RandomPercentGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E181485D1A93170E0093F61E /* RandomPercentGenerator.m */; };
+		E18148611A93215C0093F61E /* StockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18148601A93215C0093F61E /* StockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,6 @@
 		D6B3D3571A8F1FB90069AA16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D6B3D3581A8F1FB90069AA16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D6B3D35A1A8F1FB90069AA16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D6B3D35C1A8F1FB90069AA16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D6B3D35D1A8F1FB90069AA16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6B3D35F1A8F1FB90069AA16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6B3D3621A8F1FB90069AA16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6B3D3681A8F1FB90069AA16 /* HW5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,10 @@
 		D6B3D37C1A8F25A00069AA16 /* RandomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomView.m; sourceTree = "<group>"; };
 		D6B3D37E1A8F25B10069AA16 /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
 		D6B3D37F1A8F25B10069AA16 /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
+		E181485C1A93170E0093F61E /* RandomPercentGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomPercentGenerator.h; sourceTree = "<group>"; };
+		E181485D1A93170E0093F61E /* RandomPercentGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomPercentGenerator.m; sourceTree = "<group>"; };
+		E181485F1A93215C0093F61E /* StockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockViewController.h; sourceTree = "<group>"; };
+		E18148601A93215C0093F61E /* StockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,17 +93,19 @@
 			children = (
 				D6B3D3571A8F1FB90069AA16 /* AppDelegate.h */,
 				D6B3D3581A8F1FB90069AA16 /* AppDelegate.m */,
-				D6B3D35C1A8F1FB90069AA16 /* ViewController.h */,
-				D6B3D35D1A8F1FB90069AA16 /* ViewController.m */,
 				D6B3D35F1A8F1FB90069AA16 /* Images.xcassets */,
 				D6B3D3611A8F1FB90069AA16 /* Main.storyboard */,
 				D6B3D37B1A8F25A00069AA16 /* RandomView.h */,
 				D6B3D37C1A8F25A00069AA16 /* RandomView.m */,
+				E181485C1A93170E0093F61E /* RandomPercentGenerator.h */,
+				E181485D1A93170E0093F61E /* RandomPercentGenerator.m */,
 				D6B3D37E1A8F25B10069AA16 /* ShapeView.h */,
 				D6B3D37F1A8F25B10069AA16 /* ShapeView.m */,
 				D6B3D3781A8F24AC0069AA16 /* ArtView.h */,
 				D6B3D3791A8F24AC0069AA16 /* ArtView.m */,
 				D6B3D3551A8F1FB90069AA16 /* Supporting Files */,
+				E181485F1A93215C0093F61E /* StockViewController.h */,
+				E18148601A93215C0093F61E /* StockViewController.m */,
 			);
 			path = HW5;
 			sourceTree = "<group>";
@@ -230,12 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6B3D35E1A8F1FB90069AA16 /* ViewController.m in Sources */,
 				D6B3D35B1A8F1FB90069AA16 /* main.m in Sources */,
 				D6B3D37A1A8F24AC0069AA16 /* ArtView.m in Sources */,
+				E18148611A93215C0093F61E /* StockViewController.m in Sources */,
 				D6B3D37D1A8F25A00069AA16 /* RandomView.m in Sources */,
 				D6B3D3801A8F25B10069AA16 /* ShapeView.m in Sources */,
 				D6B3D3591A8F1FB90069AA16 /* AppDelegate.m in Sources */,
+				E181485E1A93170E0093F61E /* RandomPercentGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +428,7 @@
 				D6B3D3741A8F1FB90069AA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6B3D3751A8F1FB90069AA16 /* Build configuration list for PBXNativeTarget "HW5Tests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				D6B3D3771A8F1FB90069AA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
