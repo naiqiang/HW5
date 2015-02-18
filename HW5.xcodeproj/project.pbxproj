@@ -17,6 +17,9 @@
 		D6B3D3801A8F25B10069AA16 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B3D37F1A8F25B10069AA16 /* ShapeView.m */; };
 		E181485E1A93170E0093F61E /* RandomPercentGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E181485D1A93170E0093F61E /* RandomPercentGenerator.m */; };
 		E18148611A93215C0093F61E /* StockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18148601A93215C0093F61E /* StockViewController.m */; };
+		E18148631A945B560093F61E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E18148621A945B560093F61E /* background.png */; };
+		E181486B1A945D130093F61E /* ShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E181486A1A945D130093F61E /* ShapeViewController.m */; };
+		E181486E1A9469950093F61E /* ArtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E181486D1A9469950093F61E /* ArtViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,11 @@
 		E181485D1A93170E0093F61E /* RandomPercentGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomPercentGenerator.m; sourceTree = "<group>"; };
 		E181485F1A93215C0093F61E /* StockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockViewController.h; sourceTree = "<group>"; };
 		E18148601A93215C0093F61E /* StockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockViewController.m; sourceTree = "<group>"; };
+		E18148621A945B560093F61E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = HW5/background.png; sourceTree = "<group>"; };
+		E18148691A945D130093F61E /* ShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeViewController.h; sourceTree = "<group>"; };
+		E181486A1A945D130093F61E /* ShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeViewController.m; sourceTree = "<group>"; };
+		E181486C1A9469950093F61E /* ArtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtViewController.h; sourceTree = "<group>"; };
+		E181486D1A9469950093F61E /* ArtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 		D6B3D3491A8F1FB90069AA16 = {
 			isa = PBXGroup;
 			children = (
+				E18148621A945B560093F61E /* background.png */,
 				D6B3D3541A8F1FB90069AA16 /* HW5 */,
 				D6B3D36B1A8F1FB90069AA16 /* HW5Tests */,
 				D6B3D3531A8F1FB90069AA16 /* Products */,
@@ -106,6 +115,10 @@
 				D6B3D3551A8F1FB90069AA16 /* Supporting Files */,
 				E181485F1A93215C0093F61E /* StockViewController.h */,
 				E18148601A93215C0093F61E /* StockViewController.m */,
+				E18148691A945D130093F61E /* ShapeViewController.h */,
+				E181486A1A945D130093F61E /* ShapeViewController.m */,
+				E181486C1A9469950093F61E /* ArtViewController.h */,
+				E181486D1A9469950093F61E /* ArtViewController.m */,
 			);
 			path = HW5;
 			sourceTree = "<group>";
@@ -217,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B3D3601A8F1FB90069AA16 /* Images.xcassets in Resources */,
+				E18148631A945B560093F61E /* background.png in Resources */,
 				D6B3D3631A8F1FB90069AA16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E181486B1A945D130093F61E /* ShapeViewController.m in Sources */,
 				D6B3D35B1A8F1FB90069AA16 /* main.m in Sources */,
 				D6B3D37A1A8F24AC0069AA16 /* ArtView.m in Sources */,
+				E181486E1A9469950093F61E /* ArtViewController.m in Sources */,
 				E18148611A93215C0093F61E /* StockViewController.m in Sources */,
 				D6B3D37D1A8F25A00069AA16 /* RandomView.m in Sources */,
 				D6B3D3801A8F25B10069AA16 /* ShapeView.m in Sources */,

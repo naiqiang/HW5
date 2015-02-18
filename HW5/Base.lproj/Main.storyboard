@@ -667,7 +667,7 @@
         <!--Tab View Controller-->
         <scene sceneID="ASz-he-L12">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="PWF-aY-aka" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="1" id="PWF-aY-aka" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="5Vk-BY-1ec"/>
                         <tabViewItem identifier="" id="2kT-Mu-YjF"/>
@@ -733,10 +733,10 @@
             </objects>
             <point key="canvasLocation" x="797" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Shape View Controller-->
         <scene sceneID="pZa-GC-3cK">
             <objects>
-                <viewController id="zSB-6j-FGF" sceneMemberID="viewController">
+                <viewController id="zSB-6j-FGF" customClass="ShapeViewController" sceneMemberID="viewController">
                     <view key="view" id="405-9y-f9w">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -752,15 +752,18 @@
                             <constraint firstAttribute="bottom" secondItem="Dmf-sW-hKQ" secondAttribute="bottom" constant="20" id="sAi-vQ-jFS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="shapeView" destination="Dmf-sW-hKQ" id="n6M-Om-CXv"/>
+                    </connections>
                 </viewController>
                 <customObject id="EFl-SA-dR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="797" y="769"/>
         </scene>
-        <!--View Controller-->
+        <!--Art View Controller-->
         <scene sceneID="P6V-IR-PWK">
             <objects>
-                <viewController id="FIO-BN-bma" sceneMemberID="viewController">
+                <viewController id="FIO-BN-bma" customClass="ArtViewController" sceneMemberID="viewController">
                     <view key="view" id="DHt-0H-9R8">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

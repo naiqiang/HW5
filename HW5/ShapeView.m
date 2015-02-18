@@ -15,10 +15,26 @@
     
     // Drawing code here.
     
-    NSColor* green = [NSColor greenColor];
-    [green set];
+    [[NSColor greenColor] set];
     
-    [NSBezierPath fillRect:self.bounds];
+    NSBezierPath* path = [NSBezierPath bezierPath];
+    
+    NSUInteger width = self.bounds.size.width /3;
+    NSUInteger div = 10;
+    
+    NSRect square = NSMakeRect(0,0,width-div,width-div);
+    NSRect oval = NSMakeRect(width*2, 0, width-div,width-div);
+    
+    [path appendBezierPathWithRect:square];
+    [path appendBezierPathWithOvalInRect:oval];
+
+    [path moveToPoint:NSMakePoint(width, 0)];
+    [path lineToPoint:NSMakePoint(width*2-div, 0)];
+    [path lineToPoint:NSMakePoint(width*1.5, width-div)];
+    [path moveToPoint:NSMakePoint(width, 0)];
+
+    [path fill];
+    [path stroke];
 
 }
 

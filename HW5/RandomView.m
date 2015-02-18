@@ -15,8 +15,8 @@
     
     // Drawing code here.
     
-    //[[NSColor colorWithPatternImage:[NSImage imageNamed:@"pattern.png"]] set];
-    [[NSColor redColor] set];
+    [[NSColor colorWithPatternImage:[NSImage imageNamed:@"background.png"]] set];
+    //[[NSColor redColor] set];
     
     NSBezierPath* path = [NSBezierPath bezierPath];
     [path moveToPoint:CGPointZero];
@@ -39,7 +39,7 @@
     [path lineToPoint:CGPointMake(0, 0)];
 
     
-    //[path fill];
+    [path fill];
     [path stroke];
 }
 
