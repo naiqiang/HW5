@@ -25,7 +25,8 @@
     NSUInteger width = self.bounds.size.width;
     NSUInteger height = self.bounds.size.height;
 
-    int n = 25;
+    NSUInteger n = width*height/30000+10;
+    NSLog(@"%lu", (unsigned long)n);
     while(n-->0)
     {
         // random numbers for: font, size, glyph, rgba, x, y
@@ -33,7 +34,7 @@
         
         
         int fontIndex = [(NSNumber*)rand[0] floatValue] * fontTotalNum;
-        int size = [(NSNumber*)rand[1] floatValue] * 128;
+        int size = [(NSNumber*)rand[1] floatValue] * 96 + 32;
         NSString* name = (NSString*)[fontNames objectAtIndex:fontIndex];
         NSFont* font = [NSFont fontWithName:name size:size];
 
@@ -48,13 +49,21 @@
         float x = [(NSNumber*)rand[7] floatValue] * width;
         float y = [(NSNumber*)rand[8] floatValue] * height;
         
-//        NSLog(@"Font %@ has %lu glyphs", font, (unsigned long)font.numberOfGlyphs);
-//        NSLog(@"Draw %d with (%f,%f,%f,%f,) at (%f,%f)", glyphIndex, R,G,B,A,x,y);
+        //        NSLog(@"Font %@ has %lu glyphs", font, (unsigned long)font.numberOfGlyphs);
+        //        NSLog(@"Draw %d with (%f,%f,%f,%f,) at (%f,%f)", glyphIndex, R,G,B,A,x,y);
+        //NSLog(@"Draw with (%f,%f,%f,%f,)", R,G,B,A);
 
-        [[NSColor colorWithRed:R green:G  blue:B alpha:A ] set];
+        NSColor* color = [NSColor colorWithRed:R green:G  blue:B alpha:A ];
+        NSColor* color2 = [NSColor colorWithRed:R green:G  blue:B alpha:1 ];
+        [color setFill];
+        [color2 setStroke];
+        
         [path moveToPoint:NSMakePoint(x, y)];
         [path appendBezierPathWithGlyph:glyph inFont:font];
-        [path fill];
+        
+        if ( glyphIndex % 2 == 0){
+            [path fill];
+        }
         [path stroke];
     }
 
