@@ -667,7 +667,7 @@
         <!--Tab View Controller-->
         <scene sceneID="ASz-he-L12">
             <objects>
-                <tabViewController selectedTabViewItemIndex="1" id="PWF-aY-aka" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="PWF-aY-aka" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="5Vk-BY-1ec"/>
                         <tabViewItem identifier="" id="2kT-Mu-YjF"/>
