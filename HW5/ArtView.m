@@ -15,23 +15,51 @@
     [super drawRect:dirtyRect];
     
     // Drawing code here.
+    [[NSColor colorWithRed:.9 green:1 blue:.9 alpha:1] set];
+    [NSBezierPath fillRect:self.bounds];
     
-    NSBezierPath* path = [NSBezierPath bezierPath];
-
+    NSUInteger width = self.bounds.size.width;
+    NSUInteger height = self.bounds.size.height;
+    
+    NSUInteger n = 25;
+    while(n-->0)
+    {
+        // x,y,w,h,xr,yr,r,g,b
+        NSArray* rand = [RandomPercentGenerator arrayOfPercents:9];
+        int x = [(NSNumber*)rand[0] floatValue] * width;
+        int y = [(NSNumber*)rand[1] floatValue] * height;
+        int w = [(NSNumber*)rand[2] floatValue] * width/2;
+        int h = [(NSNumber*)rand[3] floatValue] * height/2;
+        int xr = [(NSNumber*)rand[4] floatValue] * width/10;
+        int yr = [(NSNumber*)rand[5] floatValue] * height/10;
+        float R = [(NSNumber*)rand[6] floatValue];
+        float G = [(NSNumber*)rand[7] floatValue];
+        float B = [(NSNumber*)rand[8] floatValue];
+        
+        NSColor* color = [NSColor colorWithRed:R green:G  blue:B alpha:0.5 ];
+        NSColor* color2 = [NSColor colorWithRed:R green:G  blue:B alpha:0.2 ];
+        [color setStroke];
+        [color2 setFill];
+        
+        NSBezierPath* path = [NSBezierPath bezierPath];
+        [path appendBezierPathWithRoundedRect:NSMakeRect(x,y,w,h) xRadius:xr yRadius:yr];
+        [path stroke];
+        [path fill];
+    }
+    
+    
     NSFontManager* fontMgr = [NSFontManager sharedFontManager];
     NSArray* fontNames = [fontMgr availableFonts];
     NSUInteger fontTotalNum = fontNames.count;
 
-    NSUInteger width = self.bounds.size.width;
-    NSUInteger height = self.bounds.size.height;
-
-    NSUInteger n = width*height/30000+10;
+    // dont draw too many, it's slow
+    n = width*height/30000+10;
     NSLog(@"%lu", (unsigned long)n);
+    
     while(n-->0)
     {
         // random numbers for: font, size, glyph, rgba, x, y
         NSArray* rand = [RandomPercentGenerator arrayOfPercents:9];
-        
         
         int fontIndex = [(NSNumber*)rand[0] floatValue] * fontTotalNum;
         int size = [(NSNumber*)rand[1] floatValue] * 96 + 32;
@@ -58,15 +86,16 @@
         [color setFill];
         [color2 setStroke];
         
+        NSBezierPath* path = [NSBezierPath bezierPath];
         [path moveToPoint:NSMakePoint(x, y)];
         [path appendBezierPathWithGlyph:glyph inFont:font];
-        
+
         if ( glyphIndex % 2 == 0){
             [path fill];
         }
         [path stroke];
     }
-
+    
 }
 
 @end
